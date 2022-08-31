@@ -38,8 +38,7 @@ int main()
                     cout<<"Opção escolhida soma! \n";
                      resultado = valorA + valorB;
                     cout<<"A soma é: "<<resultado<<" \n";
-                     continuar = false;
-
+                     
                         break;
 
             case 2:
@@ -52,7 +51,7 @@ int main()
                     cout<<"Opção escolhida subtração! \n";
                     resultado = valorA - valorB;
                     cout<<"A subtração é: "<<resultado<<" \n";
-                    continuar = false;
+                    
 
                         break;
 
@@ -66,7 +65,7 @@ int main()
                     cout<<"Opção escolhida mutiplicação! \n";
                        resultado = valorA * valorB;
                        cout<<"A multiplicação é : "<<resultado<<" \n";
-                       continuar = false;
+                       
                         break;
 
             case 4:
@@ -79,7 +78,7 @@ int main()
                     cout<<"Opção escolhida divisão! \n";
                        resultado = valorA/valorB;
                     cout<<" a divsão é: "<<resultado<<" \n";
-                    continuar = false;
+                   
             break;
            case 5:
                    cout<<"Opção escolhida  foi sair! \n";

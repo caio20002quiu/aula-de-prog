@@ -14,12 +14,12 @@ int main()
     while(continuar) {
         cout<<"--------MENU---------\n";
         cout<<"| 1 - SOMA          |\n";
-        cout<<"| 2 - SUBTRAÇÃO     |\n";
-        cout<<"| 3 - MULTIPLICAÇÃO |\n";
-        cout<<"| 4 - DIVISÃO       |\n";
+        cout<<"| 2 - SUBTRAÃ‡ÃƒO     |\n";
+        cout<<"| 3 - MULTIPLICAÃ‡ÃƒO |\n";
+        cout<<"| 4 - DIVISÃƒO       |\n";
         cout<<"| 5 - SAIR          |\n";
         cout<<"--------====---------\n";
-        cout<<"\n Informe uma opção\n";
+        cout<<"\n Informe uma opÃ§Ã£o\n";
         cin>>opcao;
 
 
@@ -35,9 +35,10 @@ int main()
             cout<<"Informe o valorB: \n";
             cin>>valorB;
 
-                    cout<<"Opção escolhida soma! \n";
+                    cout<<"OpÃ§Ã£o escolhida soma! \n";
                      resultado = valorA + valorB;
-                    cout<<"A soma é: "<<resultado<<" \n";
+                    cout<<"A soma Ã©: "<<resultado<<" \n";
+                     continuar = false;
 
                         break;
 
@@ -48,9 +49,10 @@ int main()
             cout<<"Informe o valorB: \n";
             cin>>valorB;
 
-                    cout<<"Opção escolhida subtração! \n";
+                    cout<<"OpÃ§Ã£o escolhida subtraÃ§Ã£o! \n";
                     resultado = valorA - valorB;
-                    cout<<"A subtração é: "<<resultado<<" \n";
+                    cout<<"A subtraÃ§Ã£o Ã©: "<<resultado<<" \n";
+                    continuar = false;
 
                         break;
 
@@ -61,9 +63,10 @@ int main()
             cout<<"Informe o valorB: \n";
             cin>>valorB;
 
-                    cout<<"Opção escolhida mutiplicação! \n";
+                    cout<<"OpÃ§Ã£o escolhida mutiplicaÃ§Ã£o! \n";
                        resultado = valorA * valorB;
-                       cout<<"A multiplicação é : "<<resultado<<" \n";
+                       cout<<"A multiplicaÃ§Ã£o Ã© : "<<resultado<<" \n";
+                       continuar = false;
                         break;
 
             case 4:
@@ -73,16 +76,17 @@ int main()
             cout<<"Informe o valorB: \n";
             cin>>valorB;
 
-                    cout<<"Opção escolhida divisão! \n";
+                    cout<<"OpÃ§Ã£o escolhida divisÃ£o! \n";
                        resultado = valorA/valorB;
-                    cout<<" a divsão é: "<<resultado<<" \n";
+                    cout<<" a divsÃ£o Ã©: "<<resultado<<" \n";
+                    continuar = false;
             break;
            case 5:
-                   cout<<"Opção escolhida  foi sair! \n";
+                   cout<<"OpÃ§Ã£o escolhida  foi sair! \n";
                    continuar =false;
                    break;
             default:
-                    cout<<"opção invalida! \n";
+                    cout<<"opÃ§Ã£o invalida! \n";
                         break;
         }
     }

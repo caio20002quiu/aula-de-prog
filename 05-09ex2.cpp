@@ -31,9 +31,30 @@ int main()
      cout<<"A media das notas foi: "<<media<<" \n";
 
 
+     if(media>=7)
+     {
+         cout<<"Voce esta aprovado! \n";
+     }
 
+     else if ((media>=4) && (media<7))
+
+    {
+        cout<<"Voce esta de exame! \n";
+    }
+
+     else
+    {
+        cout<<"Voce esta reprovado! \n";
+    }
 
 
 
  return 0;
 }
+
+
+
+
+
+
+ 

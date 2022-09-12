@@ -1,7 +1,7 @@
 #include <iostream>
 #include<stdio.h>
 
-/*FAÇA UM PROGAMA QUE RECEBA A IDADE DE 8 PESSOAS .
+/*FAÃ‡A UM PROGAMA QUE RECEBA A IDADE DE 8 PESSOAS .
 QUANTIFIQUE A QUANTIDADE DE PESSOAS EM CADA FAIXA ETARIA DE ACORDO COM A TABELA
 FAIXA ETARIA			IDADE
 PRIMEIRA				ATE 15 ANO	
@@ -16,7 +16,7 @@ using namespace std;
 
 int main()
 {
-	int idade,i,acumulador_1,acumulador_2,acumulador_3,acumulador_4,acumulador_5,acumulador_6,acumulador_7,acumulador_8;
+	int idade,i,acumulador_1,acumulador_2,acumulador_3,acumulador_4,acumulador_5;
 	
 	float per_1,per_5;
 	
@@ -25,21 +25,21 @@ int main()
 	acumulador_3 = 0;
 	acumulador_4 = 0;
 	acumulador_5 = 0;
-	acumulador_6 = 0;
-	acumulador_7 = 0;
-	acumulador_8 = 0;
+
 	
 	
-	
+
 	
 	for(i=1;  i<=8; i++)
 	{
-		cout<<"Informe as idades de cada pessoa "<<i<<" \n";
+		cout<<"Informe as idades de cada pessoa : \n";
 		cin>> idade;
 		
 		while(idade<0)
 		{
 			cout<<"Idade invalida!:";
+			cout<<"Informe a nova idade: \n";
+			cin>>idade;
 		}
 		
 		
@@ -47,15 +47,15 @@ int main()
 		{
 			acumulador_1++;
 		}
-		if ((idade>15)&&(idade <= 30))
+		else if ((idade>15)&&(idade <= 30))
 		{
 			acumulador_2++;
 		}
-		if ((idade>30)&&(idade<=45))
+		else if ((idade>30)&&(idade<=45))
 		{
 			acumulador_3++;
 		}
-		if ((idade>45)&&(idade<=60))
+		else if ((idade>45)&&(idade<=60))
 		{
 			acumulador_4++;
 		}
@@ -63,7 +63,7 @@ int main()
 		{
 			acumulador_5++;
 		}
-		
+	}
 	
 	cout<<"\nPessoas na primeira faixa etaria "<<acumulador_1;
 	cout<<"\nPessoas na segunda faixa etaria "<<acumulador_2;
@@ -71,14 +71,13 @@ int main()
 	cout<<"\nPessoas na quarta faixa etaria "<<acumulador_4;
 	cout<<"\nPessoas na quinta faixa etaria "<<acumulador_5;
 	
-	percentual_1 = 100*(acumulador_1/8.0);
+	per_1 = 100*(acumulador_1/8.0);
 
 	
-	cout<<"\n\t O percentual de pessoas da primeira faixa: "<<per_1<<" ; 
+	cout<<"\n\t O percentual de pessoas da primeira faixa: "<<per_1<<"" ; 
 	
 	
-
+return 0;
 	
-  
 }
 

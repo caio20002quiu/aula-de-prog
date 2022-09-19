@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
 	//Fn = fn- + Fn-2
-	int vet_pos[30],i;
+	int vet_pos[30],i,posicao;
 	
 	vet_pos[0]=1;
 	vet_pos[1]=1;
@@ -27,6 +27,9 @@ int main()
 	}
 	
 	
+	cout<<"\n\nInforme a posicao que deseja calcular:";
+	cin>>posicao;
+	cout<<"O valor de fibonacci "<<posicao<<" eh: "<<vet_pos[posicao - 1];
 	
 	
 	

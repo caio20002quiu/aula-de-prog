@@ -1,0 +1,344 @@
+/*
+==================================================================================
+
+                               Nome do Programa
+
+==================================================================================
+Empresa: Nome da empresa:
+Equipe de Programadores:
+               Nome do Primeiro
+               Nome do segundo
+               Nome do terceiro
+               Nome do quarto
+Curso: Nome do curso
+Data de início do projeto: dd/mm/aaaa
+----------------------------------------------------------------------------------
+Descrição do Programa:
+		Texto de descrição  Texto de descrição Texto de descrição Texto de descri-
+        ção Texto de descrição Texto de descrição Texto de descrição Texto de des-
+       crição Texto de descrição
+Versão do programa: X.Y
+Melhorias da versão: (se for a primeira versão, informar "Primeira versão"), Texto
+					 de descrição das melhorias e implementações realizadas na
+					 nova versão.
+Data de lançamento da versão: dd/mm/aa
+==================================================================================
+*/
+
+#include <iostream>
+#include <cmath>
+#include <stdio.h>
+#include <math.h>
+using namespace std;
+
+
+
+
+int main()
+{
+    int fluido,material;
+    float V,D,VA,A,RE;
+    
+    
+    //atribuindo variaveis de massa e viscosidade de cada fluido 
+    float massasele;
+    float viscosidadesele;
+    
+    float massaA = 998.2;
+	float viscosidadeA= 1.99;
+	
+	float massaAR = 1.189;
+	float viscosidadeAR = 1.83;
+	
+	float massaE = 789;
+	float viscosidadeE = 1.19;
+	
+	float massaG = 1260;
+	float viscosidadeG = 1.49;
+	
+	float massaM = 13550;
+	float viscosidadeM = 1.56;
+	  
+	float massaO = 891;
+	float viscosidadeO = 0.29;	
+	
+	   
+	cout<<"\n|---TABELA DE FLUIDOS---|:\n";
+	cout<<"\n|  0 - MANUAL|";
+	cout<<"\n|	1 - AGUA     |";
+	cout<<"\n massa = 998,2 Kg/m";
+	cout<<"\n viscossidade dinamica = 1,99 E-3 \n";
+	cout<<"\n|	2 - AR-SECO  |";
+	cout<<"\n massa = 1,189 Kg/m";
+	cout<<"\n viscossidade dinamica = 1,83 E-5 \n";
+	cout<<"\n|  3 - ETANOL        |";
+	cout<<"\n massa = 789 Kg/m";
+	cout<<"\n viscossidade dinamica = 1,19 E-3\n";
+	cout<<"\n|  4 - GLICERINA     |";
+	cout<<"\n massa = 1260 Kg/m";
+	cout<<"\n viscossidade dinamica = 1,49\n";
+	cout<<"\n|  5 - MERCURIO      |";
+	cout<<"\n massa = 13550 Kg/m";
+	cout<<"\n viscossidade dinamica = 1,56 E-3\n";
+	cout<<"\n|  6 - OLEO SAE 30/n |";
+	cout<<"\n massa = 891 Kg/m";
+	cout<<"\n viscossidade dinamica = 0,29\n";	
+	cout<<"\n INFORME O FLUIDO ULTILIZADO:\n";
+	cin>>fluido;
+	
+	
+		if (fluido == 0)	
+		{ 
+		cout<<"Informe a massa:";
+		cin>>massasele;
+		cout<<"Informe a viscosidade:";
+		cin>>viscosidadesele;
+			
+				}
+		if (fluido == 1)	
+		{ 
+			massasele = massaA;
+			viscosidadesele = viscosidadeA;
+			
+				}
+		
+			if  (fluido == 2)
+		{ 
+			massasele = massaAR;
+			viscosidadesele = viscosidadeAR;
+			
+				}
+			
+			if  (fluido == 3)
+		{ 
+			massasele = massaE;
+			viscosidadesele = viscosidadeE;
+			
+				}
+			
+			if  (fluido == 4)
+		{ 
+			massasele = massaG;
+			viscosidadesele = viscosidadeG;
+			
+				}
+			
+			if  (fluido == 5)
+		{ 
+			massasele = massaM;
+			viscosidadesele = viscosidadeM;
+			
+				}
+		   
+		   if  (fluido == 6)
+		{ 
+			massasele = massaO;
+			viscosidadesele = viscosidadeO;
+			
+				}
+		
+		
+	
+		//atribuindo as variaveis de rugosidade de cada material
+	float rugosidadesele;
+	
+	float rugoACC; // 7
+	
+	float rugoALC; // 8
+	
+	float rugoASN; // 9
+	
+	float rugoASMO; // 10
+	
+	float rugoALRS; // 11
+	
+	float rugoAGCC; // 12
+	
+	float rugoFFN; // 13
+	
+	float rugoFFLO; // 14
+	
+	float rugoFFL; //  15
+	
+	float rugoFFC; // 16 
+	
+	float rugoFFRA; // 17
+	
+	float rugoFFO; // 18
+	
+	float rugoCCN; // 19
+	
+	float rugoCALVAU; // 20
+	
+	float rugoCAN; // 21
+	
+	float rugoETC; // 22
+	
+	cout<<"\n---TABELA DE RUGOSIDADE DA SUPERFICIE INTERNA:---";
+	cout<<"\n |7 - Aco carbono comercial novo:|";
+	cout<<"\n rugosidade = 0,045 \n";
+	cout<<"\n |8 - Aco laminado novo:|";
+	cout<<"\n rugosidade = 0,04 a 0,10 \n";
+	cout<<"\n |9 - aco soldado novo:|";	
+	cout<<"\n rugosidade = 0,05 a 0,10 \n";
+	cout<<"\n |10 - Aco soldado moderadamente oxidado:|";
+	cout<<"\n rugosidade = 0,4 \n";
+	cout<<"\n |11 - Aco laminado revestido de asfalto:|";
+	cout<<"\n rugosidade = 0,05 \n";
+	cout<<"\n |12 - Aco galvanizado com costura:|";
+	cout<<"\n rugosidade = 0,15 \n";
+	cout<<"\n |13 - Ferro fundido novo:|";
+	cout<<"\n rugosidade = 0,26 \n";
+	cout<<"\n |14 - Ferro fundido com leve oxidacao:|";
+	cout<<"\n rugosidade = 0,30 \n";
+	cout<<"\n |15 - Ferro fundido velho:|";
+	cout<<"\n rugosidade = 3 a 5 \n";
+	cout<<"\n |16 - Ferro fundido centrifugado:|";
+	cout<<"\n rugosidade = 0,05 \n";
+	cout<<"\n |17 - Ferro fundido com revestimento asfaltico:|";
+	cout<<"\n rugosidade = 0,12 a 0,20 \n";
+	cout<<"\n |18 - Ferro fundido oxidado:|";
+	cout<<"\n rugosidade = 1 a 1,5 \n";
+	cout<<"\n |19 - Concreto centrifugado novo|";
+	cout<<"\n rugosidade = 0,16 \n";
+	cout<<"\n |20 - Concreto armado liso com varios anos de uso:|";
+	cout<<"\n rugosidade = 0,20 a 0,30 \n";
+	cout<<"\n |21 - Concreto com acabamento normal:|";
+	cout<<"\n rugosidade = 1 a 3 \n";
+	cout<<"\n |22 - Cobre,latao,aco revestido de epoxi, tubos exlrudados, vidros, PVC, plasticos em geral:|";
+	cout<<"\n rugosidade = 0 \n";
+	cout<<"\n |23 - MANUAL:|";
+	
+	cout<<"\n IFORME O MATERIAL ULTILIZADO:";
+	cin>>material;
+	
+	if	(material == 7) 
+			{
+		rugosidadesele = rugoACC;
+	}
+	
+	if(material == 8) 
+			{
+		rugosidadesele = rugoALC;
+	}
+	
+	if	(material == 9) 
+			{
+		rugosidadesele = rugoASN;
+	}
+	
+	if	(material == 10) 
+			{
+		rugosidadesele = rugoASMO;
+	}
+	
+	if	(material == 11) 
+			{
+		rugosidadesele = rugoASN;
+	}
+	
+	if	(material == 12) 
+			{
+		rugosidadesele = rugoAGCC;
+	}
+	
+	if	(material == 13) 
+			{
+		rugosidadesele = rugoFFN;
+	}
+	
+	if	(material == 14) 
+			{
+		rugosidadesele = rugoFFLO;
+	}
+	
+	if	(material == 15) 
+			{
+		rugosidadesele = rugoFFL;
+	}
+	
+	if	(material == 16) 
+			{
+		rugosidadesele = rugoFFC;
+	}
+	
+	if	(material == 17) 
+			{
+		rugosidadesele = rugoFFRA;
+	}
+	
+	if	(material == 18) 
+			{
+		rugosidadesele = rugoFFO;
+	}
+	
+	if	(material == 19) 
+			{
+		rugosidadesele = rugoCCN;
+	}
+	
+	if	(material == 20) 
+			{
+		rugosidadesele = rugoCALVAU;
+	}
+	
+	if	(material == 21) 
+			{
+		rugosidadesele = rugoCAN;
+	}
+	
+	if	(material == 22) 
+			{
+		rugosidadesele = rugoETC;
+	}
+	
+	if	(material == 23) 
+			{
+		cout<<"Informe a rugosidade:";
+		cin>>rugosidadesele;
+	}
+	
+	//pedindo as informacoes 
+	
+	cout<<"\n INFORME VAZAO:\n";
+	cin>>VA;
+	cout<<"\n";
+	cout<<"\n";
+	cout<<"\n";
+	cout<<"\n INFORME O DIAMETRO HIDRAULICO DA TUBULACAO:\n";
+	cin>>D;
+	
+	A = (3.14 * D * D) / 4;  // calculo da area
+	
+	
+	V = VA / A; // calculo da velocidade media
+	cout<<"\n A Velocidade media da vazao eh:"<<V<<"\n";
+	
+	
+	
+	RE = (massasele * V * D)  /  viscosidadesele ; 
+	cout<<"\n O regime de escoamento eh: "<<RE<<"";
+	
+	
+	float f;
+	
+	
+	if (RE < 2300)
+	{
+		f = 64 / RE;
+		cout<<"\n O escoamento eh laminar";
+		cout<<"\n O fator de atrito eh: "<<f<<"";
+	}
+	
+	else if (RE >= 2300)
+	{
+		f = pow (-2 * 1 * (( rugosidadesele / D ) / 3.7  +  ( 2.51 / RE * sqrt (f))),-2.0);
+		cout<<"\n O escoamento eh turbulento";
+		cout<<"\n O fator de atrito eh: "<<f<<"";
+	}
+	
+
+	
+	return 0;
+    
+}

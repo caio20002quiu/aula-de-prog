@@ -1,3 +1,30 @@
+/*
+==================================================================================
+
+    PROJETO FATOR DE ATRITO                           Nome do Programa
+
+==================================================================================
+Empresa: Nome da empresa:
+Equipe de Programadores:
+    Caio Vinicius Sabino de Araujo gondim           Nome do Primeiro
+    José Antonio Baruki Corrêa           Nome do segundo
+    Arthur fernandes castanheira           Nome do terceiro
+    Alexandre Raul Fontoura Gonçalves           Nome do quarto
+Curso: Engenharia da Computacao
+Data de início do projeto: 18/10/2022
+----------------------------------------------------------------------------------
+Descrição do Programa:
+		Programa feito para que o usuario possa obter o valor do fator de atrito do escoamento de uma tubulacao
+Versão do programa: 1.0
+Melhorias da versão: 
+Data de lançamento da versão: 20/10/2022
+==================================================================================
+*/
+
+
+
+
+
 #include <iostream>
 #include <cmath>
 #include <stdio.h>
@@ -611,7 +638,3 @@ int main()
 	return 0;
 
 }
-
-
-
-

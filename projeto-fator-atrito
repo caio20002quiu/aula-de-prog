@@ -621,6 +621,7 @@ int main()
 	{
 	    while(erro>0.01)
         {
+		rugosidadesele = rugosidadesele/1000.0;
         f = 1 / ((-2) * log10(((rugosidadesele / D )/3.7) + (2.51 / ( RE * sqrt(f_chute)))));
 		f = pow(f,2.0);
 		erro = fabs(((f - f_chute)/f));

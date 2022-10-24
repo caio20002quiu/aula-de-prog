@@ -597,7 +597,7 @@ int main()
 
 
 	V = VA / A; // calculo da velocidade media
-	cout<<"\n A Velocidade media da vazao eh:"<<V<<"\n";
+	cout<<"\n A Velocidade media da vazao eh:"<<V<<" m/s \n";
 
 
 

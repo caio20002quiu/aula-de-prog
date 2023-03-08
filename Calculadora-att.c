@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <iostream>
 #include <locale.h>
 #include <cmath>
 
@@ -16,13 +16,14 @@ int main()
     while(continuar){
         cout<<"--------MENU---------\n";
         cout<<" 1- SOMA             |\n";
-        cout<<" 2- SUBATRAÇÃO       |\n";
-        cout<<" 3- MULTIPLICAÇÃO    |\n";
-        cout<<" 4- DIVISÃO          |\n";
+        cout<<" 2- SUBATRAÃ‡ÃƒO       |\n";
+        cout<<" 3- MULTIPLICAÃ‡ÃƒO    |\n";
+        cout<<" 4- DIVISÃƒO          |\n";
         cout<<" 5- RAIZ             |\n";
-        cout<<" 6- SAIR             |\n";
-        cout<<"----------------------\n";
-        cout<<"\n Informe a opção que deseja calcular:\n";
+        cout<<" 6- QUADRATICA       |\n";
+        cout<<" 7- SAIR             |\n";
+        cout<<"---------------------\n";
+        cout<<"\n Informe a opÃ§Ã£o que deseja calcular:\n";
         cin>>opcao;
 
     switch(opcao){
@@ -33,9 +34,9 @@ int main()
             cout<<"Informe o valorB: \n";
             cin>>valorB;
 
-                    cout<<"Opção escolhida soma! \n";
+                    cout<<"OpÃ§Ã£o escolhida soma! \n";
                      resultado = valorA + valorB;
-                    cout<<"A soma é: "<<resultado<<" \n";
+                    cout<<"A soma Ã©: "<<resultado<<" \n";
 
                         break;
 
@@ -47,9 +48,9 @@ int main()
             cout<<"Informe o valorB: \n";
             cin>>valorB;
 
-                    cout<<"Opção escolhida subtração! \n";
+                    cout<<"OpÃ§Ã£o escolhida subtraÃ§Ã£o! \n";
                      resultado = valorA - valorB;
-                    cout<<"A subtração é: "<<resultado<<" \n";
+                    cout<<"A subtraÃ§Ã£o Ã©: "<<resultado<<" \n";
 
                         break;
         case 3:
@@ -59,9 +60,9 @@ int main()
             cout<<"Informe o valorB: \n";
             cin>>valorB;
 
-                    cout<<"Opção escolhida multiplicação! \n";
+                    cout<<"OpÃ§Ã£o escolhida multiplicaÃ§Ã£o! \n";
                      resultado = valorA * valorB;
-                    cout<<"A multiplicação é: "<<resultado<<" \n";
+                    cout<<"A multiplicaÃ§Ã£o Ã©: "<<resultado<<" \n";
 
                         break;
         case 4:
@@ -71,40 +72,38 @@ int main()
             cout<<"Informe o valorB: \n";
             cin>>valorB;
 
-                    cout<<"Opção escolhida divisão! \n";
+                    cout<<"OpÃ§Ã£o escolhida divisÃ£o! \n";
                      resultado = valorA / valorB;
-                    cout<<"A divisão é: "<<resultado<<" \n";
+                    cout<<"A divisÃ£o Ã©: "<<resultado<<" \n";
 
                         break;
 
         case 5:
 
 
-                cout<<"Informe o valorX: \n";
+                cout<<"Informe um valor: \n";
                 cin>>valorX;
 
-                        cout<<"Opção escolhida foi divisão! \n";
-                        cout<<""A raiz é: "<<sqrt(valorX)<<"\n";
-
-
+                        cout<<"OpÃ§Ã£o escolhida foi divisÃ£o! \n";
+                        cout<<"A raiz Ã©: "<<sqrt(valorX)<<"\n";
                     break;
-
-
-         case 6:
-                cout<<"Opção escolhida  foi sair! \n";
+                    
+        case 6:
+				cout<<"Informe um valor: \n";
+				cin>>valorX;
+						
+						cout<<"OpÃ§Ã£o escolhida foi operaÃ§Ã£o quadratica ! \n";
+						resultado = valorX * valorX;
+						cout<<"o valor ao quadrado Ã©: "<<resultado<<"\n";            
+                    
+         case 7:
+                cout<<"OpÃ§Ã£o escolhida  foi sair! \n";
                 continuar =false;
                     break;
             default:
-                    cout<<"opção invalida! \n";
+                    cout<<"opÃ§Ã£o invalida! \n";
                         break;
-
-
             }
-
-
         }
-
-
-
         return 0;
     }

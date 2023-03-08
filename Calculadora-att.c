@@ -20,7 +20,7 @@ int main()
         cout<<" 3- MULTIPLICAÇÃO    |\n";
         cout<<" 4- DIVISÃO          |\n";
         cout<<" 5- RAIZ             |\n";
-        cout<<" 6- QUADRATICA       |\n";
+        cout<<" 6- POTENCIAÇÃO      |\n";
         cout<<" 7- SAIR             |\n";
         cout<<"---------------------\n";
         cout<<"\n Informe a opção que deseja calcular:\n";
@@ -92,7 +92,7 @@ int main()
 				cout<<"Informe um valor: \n";
 				cin>>valorX;
 						
-						cout<<"Opção escolhida foi operação quadratica ! \n";
+						cout<<"Opção escolhida foi potenciação ! \n";
 						resultado = valorX * valorX;
 						cout<<"o valor ao quadrado é: "<<resultado<<"\n";            
                     

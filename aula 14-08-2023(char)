@@ -1,0 +1,39 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <iostream>
+#include <cstring>
+
+
+//Função main
+using namespace std;
+int main()
+{
+	char nome[50],ddn[13],cpf[15];
+	int tads;
+	
+	cout<<"insira seu nome\n";
+		cin.getline(nome,50);
+				
+	cout<<"insira sua data de nascimento \n";
+		cin.getline(ddn,13);
+		
+	cout<<"insira seu CPF\n";
+		cin.getline(cpf,15);
+		
+	cout<<"insira seu semestre\n";
+		cin>>tads;
+	
+	cout<<"Nome:"<<nome<<"\n";
+	
+	cout<<"data de nascimento: "<<ddn<<"\n";
+	
+	cout<<"cpf: "<<cpf<<"\n";
+	
+	cout<<"semestre: "<<tads<<"\n";
+    
+    
+
+    
+    return 0;
+}

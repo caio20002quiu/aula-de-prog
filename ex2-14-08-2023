@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main()
+{
+	char serie[10];
+	int ano;
+	
+	cout<<"Qual ano estamos?\n";
+	cin>>ano;
+	
+	cout<<"\nQual serie do campeonato brasileiro o vasco disputa?\n";
+	cin.getline(serie,10);
+	cout<<"\n";	
+	
+	cout<<"O clube de Regatas Vasco da Gama disputa a Serie:"<<serie<<"\n";
+	cout<<"Campeonato Brasileiro de Futebol no ano de: "<<ano<<"";
+	
+
+	
+	return 0;
+}

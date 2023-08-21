@@ -1,1 +1,29 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	float n1,n2,n3,n4,media;
+	
+	cout<<"Informe a nota 1\n";
+	cin>>n1;
+	
+	cout<<"Informe a nota 2\n";
+	cin>>n2;
+	 
+	cout<<"Informe a nota 3\n";
+	cin>>n3;
+	
+	cout<<"Informe a nota 4\n";
+	cin>>n4;
+	
+	media = (n1+n2+n3+n4)/4;
+	
+	cout<<"A media das notas eh:"<<media<<"\n";
+	
+	return 0;
+}
 

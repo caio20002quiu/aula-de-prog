@@ -1,0 +1,48 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int n1,n2,soma,sub,sub2,mult,div,resto;
+	float a,b,divext;
+
+	
+	cout<<"Escreva um numero inteiro:  ";
+	cin>>n1;
+	cout<<"Agora escreva outro numero inteiro: ";
+	cin>>n2;
+	
+	soma = n1 + n2;
+	cout<<"A soma dos numeros eh:"<<soma<<"\n";
+	
+	sub = n1 - n2;
+	cout<<"A subtracao do primero menos o segundo numero eh:"<<sub<<"\n";
+	
+	sub2 = n2 - n1;
+	cout<<"A subtracao do segundo menos o primeiro numero eh:"<<sub2<<"\n";
+	
+	mult = n1 * n2;
+	cout<<"A multiplicacao dos numeros eh: "<<mult<<"\n";
+	
+	div = n1 / n2;
+	cout<<"A divisao dos numeros eh:"<<div<<"\n\n";
+	
+	resto = n1 % n2;
+	cout<<"O resto da divisao eh:"<<resto<<"\n\n";
+	
+	cout<<"Agora de outro numero nao inteiro: \n";
+	cin>>a;
+	cout<<"Agora de um segundo numero nao inteiro:\n\n";
+	cin>>b;
+	
+	divext = a / b;
+	cout<<"A divisao exata eh:"<<divext<<"\n\n";
+	
+	
+	
+	
+	return 0;
+}

@@ -1,0 +1,37 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	
+	float n1,n2,n3,mp;
+	int p1,p2,p3;
+
+
+	cout<<"Informe a nota 1\n";
+	cin>>n1;
+	
+	cout<<"Informe a nota 2\n";
+	cin>>n2;
+	
+	cout<<"Informe a nota 3\n";
+	cin>>n3;
+	
+	cout<<"Informe o peso 1\n";
+	cin>>p1;
+	
+	cout<<"Informe o peso 2\n";
+	cin>>p2;
+	
+	cout<<"Informe o peso 3\n";
+	cin>>p3;
+
+
+   mp = (n1*p1 + n2*p2 + n3*p3)/(n1+n2+n3);
+   cout<<"A media ponderada das notas eh: "<<mp<<"\n";
+   
+   	return 0;
+}

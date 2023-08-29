@@ -1,0 +1,40 @@
+#include <stdlib.h>
+#include <iostream>
+#include <stdio.h>
+
+using namespace std;
+
+int main()
+{
+	float saldoM,valorC;
+	
+	cout<<"Informe seu saldo medio:";
+	cin>>saldoM;
+	
+	if(saldoM >= 3000)
+	{	
+		valorC= saldoM * 0.30;
+			cout<<"valor do credito salarial eh: "<<valorC<<"";
+	}
+	
+	else if((saldoM>=1800)&&(saldoM<3000))
+	{	
+		valorC= saldoM * 0.25;
+			cout<<"valor do credito salarial eh: "<<valorC<<"";
+	}
+	
+	else if((saldoM>=800)&&(saldoM<1800))
+	{	
+		valorC= saldoM * 0.20;
+			cout<<"valor do credito salarial eh: "<<valorC<<"";
+	}
+	
+	else if(saldoM<800)
+	{	
+		valorC= saldoM * 0.10;
+			cout<<"valor do credito salarial eh: "<<valorC<<"";
+	}
+	
+	
+	return 0;
+}

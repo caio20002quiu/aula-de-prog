@@ -1,0 +1,39 @@
+#include <stdlib.h>
+#include <iostream>
+#include <stdio.h>
+
+using namespace std;
+
+int main()
+{
+	int n1,n2,n3;
+	
+	cout<<"Digite um numero inteiro:\n";
+	cin>>n1;
+	
+	cout<<"Digite outro numero inteiro:\n";
+	cin>>n2;
+	
+	cout<<"Digite o ultimo numero inteiro:\n";
+	cin>>n3;
+	
+	if((n1>n2)&&(n1>n3))
+	{
+		cout<<"o maior numero eh o primeiro : "<<n1<<"\n";
+	}
+	
+	else if((n2>n1)&&(n2>n3))
+	{
+		cout<<"o maior numero eh o segundo : "<<n2<<"\n";
+	}
+	
+	else if((n3>n1)&&(n3>n2))
+	{
+		cout<<"o maior numero eh o terceiro : "<<n3<<"\n";
+	}
+	
+	
+	
+	return 0;
+	
+}

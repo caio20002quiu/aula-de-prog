@@ -1,0 +1,29 @@
+#include <stdlib.h>
+#include <iostream>
+#include <stdio.h>
+
+using namespace std;
+
+int main()
+{
+	
+	int n1,n2;
+	
+	cout<<"escreva um numero inteiro:\n";
+	cin>>n1;
+	cout<<"escreva outro numero inteiro:\n";
+	cin>>n2;
+	
+	if(n1>n2)
+	{
+		cout<<"o numero "<<n1<<" eh maior que "<<n2<<"\n";
+	}
+		else if(n2>n1)
+		{
+			cout<<"o numero "<<n2<<" eh maior que "<<n1<<"\n";
+		}
+	
+	
+	
+	return 0;
+}

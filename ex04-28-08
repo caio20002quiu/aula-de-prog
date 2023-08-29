@@ -1,0 +1,34 @@
+#include <stdlib.h>
+#include <iostream>
+#include <stdio.h>
+
+using namespace std;
+
+int main()
+{
+	float n1,n2,media;
+	
+	cout<<" Informe a nota da primeira prova:";
+	cin>>n1;
+	cout<<" Informe a nota da segunda prova:";
+	cin>>n2;
+	
+	media = (n1+n2)/2;
+	
+	if(media>=7)
+	{
+		cout<<"O aluno esta aprovado com media:"<<media<<"";
+	}
+	
+	  else if((media>=4)&&(media<7))
+	{
+		cout<<"O aluno esta de exame com media:"<<media<<"";
+	}
+	
+	 else if(media<4)
+	{
+		cout<<"O aluno esta reprovado com media:"<<media<<"/n";
+	}
+	
+	return 0;
+}

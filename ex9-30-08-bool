@@ -1,0 +1,38 @@
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+
+using namespace std;
+
+int main()
+{
+	int idade;
+	char sexo,pcd,estudante;
+	
+	cout<<"Informe seu sexo:(responda com M ou F): ";
+	cin>>sexo;
+	cout<<"Informe sua idade: ";
+	cin>>idade;
+	cout<<"Voce eh estudante?(responda com S ou N): ";
+	cin>>estudante;
+	cout<<"Voce eh PCD?(responda com S ou N): ";
+	cin>>pcd;
+	
+
+	bool temDireito = false;
+		
+		if (((sexo == 'm' )&& (idade > 65 )) || ((sexo == 'f') && (idade > 60)) || ((estudante == 's') && (idade < 18)) || (pcd == 's'))
+		{
+		
+	temDireito = true;
+}
+	if (temDireito){
+		cout<< "\nVoce tem o direito da passagem gratuita";
+		
+	}
+	else{
+		cout<<"\nVoce nao tem o direito da passagem gratuita";
+	}
+	
+	return 0;
+}

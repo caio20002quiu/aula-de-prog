@@ -1,0 +1,52 @@
+#include <iostream>
+
+
+using namespace std;
+
+int main()
+{
+	
+    int idade;
+	int contador[5];
+	
+	contador[5] = 0;
+
+     for (int i = 0; i < 8; i++)
+	{
+		  cout<< "Digite a idade da pessoa " << i + 1 << ": ";
+        cin>> idade;
+
+		if(idade<=15){
+			contador[1]++;
+		}
+		else if((idade>=16)&&(idade<=30)){
+			contador[2]++;
+		}
+		else if((idade>=31)&&(idade<=45)){
+			contador[3]++;
+		}
+		else if((idade>=46)&&(idade<=60)){
+			contador[4]++;
+		}
+		else{
+			contador[5]++;
+		}
+	}
+	cout << "\nQuantidade de pessoas em cada faixa etaria:\n\n" ;
+    cout << "Menos de 18 anos: " << contador[1] << " pessoas\n\n";
+    cout << "18 a 29 anos: " << contador[2] << " pessoas\n\n" ;
+    cout << "30 a 44 anos: " << contador[3] << " pessoas\n\n" ;
+    cout << "45 a 59 anos: " << contador[4] << " pessoas\n\n" ;
+    cout << "60 anos ou mais: " << contador[5] << " pessoas\n\n" ;
+
+    
+    float total_pessoas = 8.0; 
+    float percentual_primeira_faixa = (contador[1] / total_pessoas) * 100;
+    float percentual_ultima_faixa = (contador[4] / total_pessoas) * 100;
+
+    cout << "\nPercentual de pessoas na primeira faixa etaria: " << percentual_primeira_faixa << "%" << endl;
+    cout << "Percentual de pessoas na ultima faixa etaria: " << percentual_ultima_faixa << "%" << endl;
+
+
+	return 0;
+}
